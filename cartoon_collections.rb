@@ -9,27 +9,27 @@ dwarves = %w[
 ]
 
 def roll_call_dwarves(dwarves)
-  dwarves.each_with_index do |dwarf, index|
-    puts "#{index + 1}. #{dwarf}"
+  dwarves.each_with_index do |dwarv, index|
+    puts "#{index + 1}. #{dwarv}"
   end
 end
 
 planeteer_calls = %w[earth wind fire water heart]
 
 def summon_captain_planet(planeteer_calls)
-  planeteer_calls.map { |call| call.capitalize + '!' }
+  planeteer_calls.map { |calls| calls.capitalize + '!' }
 end
 
 def long_planeteer_calls(planeteer_calls)
-  planeteer_calls.any? { |call| call.length > 4 }
+  planeteer_calls.any? { |calls| calls.length > 4 }
 end
 
-potentially_cheesy_items = %w[umbrella spinach cheddar helicopter]
+items = %w[umbrella spinach cheddar helicopter]
 
-def find_the_cheese(potentially_cheesy_items)
+def find_the_cheese(items)
   cheeses = %w[gouda cheddar camembert]
 
-  potentially_cheesy_items.find do |maybe_cheese|
+  items.find do |maybe_cheese|
     cheeses.include?(maybe_cheese)
   end
 end
