@@ -9,8 +9,8 @@ dwarves = %w[
 ]
 
 def roll_call_dwarves(dwarves)
-  dwarves.each_with_index do |dwarv, index|
-    puts "#{index + 1}. #{dwarv}"
+  dwarves.each_with_index do |dwarf, index|
+    puts "#{index + 1}. #{dwarf}"
   end
 end
 
