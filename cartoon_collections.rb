@@ -8,7 +8,7 @@ dwarves = %w[
   Happy
 ]
 
-def roll_call_dwarves
+def roll_call_dwarves(dwarves)
   
 end
 
